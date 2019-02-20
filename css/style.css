@@ -104,36 +104,41 @@ header .container .row .navi .sp-navi {
   width: 140px; }
 .shoppingguide-area .shopping-guide {
   weight: 100%; }
-  .shoppingguide-area .shopping-guide .shoppingguide-color {
-    color: #887f69;
-    font-weight: bold; }
   .shoppingguide-area .shopping-guide p {
     font-weight: bold;
     margin: 0;
-    padding-top: 15px;
     color: #887f69;
     text-align: left;
-    padding-left: 10px; }
+    padding-left: 10px;
+    padding-bottom: 5px; }
+  .shoppingguide-area .shopping-guide .colorBlack {
+    color: black;
+    font-weight: normal; }
   .shoppingguide-area .shopping-guide .delivery {
     background-color: #ffffff;
     width: 100%;
     margin-bottom: 10px; }
+    .shoppingguide-area .shopping-guide .delivery .delivery-about {
+      padding-top: 5px; }
     .shoppingguide-area .shopping-guide .delivery .delivery-icon, .shoppingguide-area .shopping-guide .delivery .delivery-price, .shoppingguide-area .shopping-guide .delivery .delivery-how {
-      padding: 10px 0 10px 10px;
+      padding: 0;
       text-align: left; }
     .shoppingguide-area .shopping-guide .delivery .delivery-icon {
       display: block;
-      margin-left: 0px; }
+      margin-left: 0px;
+      padding-left: 10px;
+      padding-bottom: 5px; }
   .shoppingguide-area .shopping-guide .payment {
     background-color: #ffffff;
-    width: 100%;
-    margin-bottom: 10px; }
+    width: 100%; }
+    .shoppingguide-area .shopping-guide .payment .payment-about {
+      padding-top: 5px; }
     .shoppingguide-area .shopping-guide .payment .payment-card, .shoppingguide-area .shopping-guide .payment .payment-icon, .shoppingguide-area .shopping-guide .payment .payment-price, .shoppingguide-area .shopping-guide .payment .payment-how {
-      padding: 10px 0 10px 10px;
       text-align: left; }
     .shoppingguide-area .shopping-guide .payment .payment-icon {
       display: block;
-      margin-left: 0px; }
+      padding-left: 10px;
+      padding-bottom: 5px; }
 
 @media (min-width: 550px) {
   .shoppingguide-area .shopping-guide {
@@ -442,10 +447,13 @@ header .container .row .navi .sp-navi {
     background-image: url(../images/top/next_icon.png);
     background-repeat: no-repeat;
     background-position: center right 10px; }
-    #side .pagelink-area .pagelink-toggle #pagelink-toggle-img, #side .pagelink-area .pagelink-toggle #category-toggle-img, #side .pagelink-area .category-toggle #pagelink-toggle-img, #side .pagelink-area .category-toggle #category-toggle-img, #side .category-area .pagelink-toggle #pagelink-toggle-img, #side .category-area .pagelink-toggle #category-toggle-img, #side .category-area .category-toggle #pagelink-toggle-img, #side .category-area .category-toggle #category-toggle-img {
-      padding-top: 13px;
-      margin: 7px;
-      padding-left: 10px; }
+    #side .pagelink-area .pagelink-toggle #pagelink-toggle-img, #side .pagelink-area .category-toggle #pagelink-toggle-img, #side .category-area .pagelink-toggle #pagelink-toggle-img, #side .category-area .category-toggle #pagelink-toggle-img {
+      margin-left: 15px;
+      padding-left: 0;
+      margin-top: 20px; }
+    #side .pagelink-area .pagelink-toggle #category-toggle-img, #side .pagelink-area .category-toggle #category-toggle-img, #side .category-area .pagelink-toggle #category-toggle-img, #side .category-area .category-toggle #category-toggle-img {
+      margin-left: 15px;
+      margin-top: 20px; }
     #side .pagelink-area .pagelink-toggle .active, #side .pagelink-area .category-toggle .active, #side .category-area .pagelink-toggle .active, #side .category-area .category-toggle .active {
       background-image: url(../images/top/down_icon.png); }
   @media (min-width: 550px) {
@@ -453,9 +461,10 @@ header .container .row .navi .sp-navi {
       background-image: url(../images/top/down_icon.png); }
     #side .pagelink-area .pagelink-toggle, #side .pagelink-area .category-toggle, #side .category-area .pagelink-toggle, #side .category-area .category-toggle {
       height: 40px; }
-      #side .pagelink-area .pagelink-toggle #pagelink-toggle-img, #side .pagelink-area .category-toggle #pagelink-toggle-img, #side .category-area .pagelink-toggle #pagelink-toggle-img, #side .category-area .category-toggle #pagelink-toggle-img {
-        margin-top: auto;
-        padding-left: 5px; } }
+      #side .pagelink-area .pagelink-toggle #pagelink-toggle-img, #side .pagelink-area .pagelink-toggle #category-toggle-img, #side .pagelink-area .category-toggle #pagelink-toggle-img, #side .pagelink-area .category-toggle #category-toggle-img, #side .category-area .pagelink-toggle #pagelink-toggle-img, #side .category-area .pagelink-toggle #category-toggle-img, #side .category-area .category-toggle #pagelink-toggle-img, #side .category-area .category-toggle #category-toggle-img {
+        margin-top: 15px;
+        margin-left: 15px;
+        padding-left: 0px; } }
   @media (max-width: 549px) {
     #side .pagelink-area .active, #side .category-area .active {
       background-image: url(../images/top/down_icon.png); } }
@@ -501,13 +510,11 @@ header .container .row .navi .sp-navi {
     height: 50px;
     margin: auto; }
     #side .about-category .about-title #about-img {
-      padding-top: 12px;
-      margin: 7px;
-      padding-left: 11px; }
+      margin-left: 15px;
+      margin-top: 20px; }
       @media (min-width: 550px) {
         #side .about-category .about-title #about-img {
-          padding-top: 8px;
-          padding-left: 8px; } }
+          margin-top: 15px; } }
     @media (min-width: 550px) {
       #side .about-category .about-title {
         height: 40px; } }
@@ -555,9 +562,11 @@ header .container .row .navi .sp-navi {
     height: 50px;
     margin: auto; }
     #side .shopinfo-category .shopinfo-title #shopinfo-img {
-      padding-top: 12px;
-      margin: 7px;
-      padding-left: 11px; }
+      margin-left: 15px;
+      margin-top: 20px; }
+      @media (min-width: 550px) {
+        #side .shopinfo-category .shopinfo-title #shopinfo-img {
+          margin-top: 15px; } }
     @media (min-width: 550px) {
       #side .shopinfo-category .shopinfo-title {
         height: 40px; } }

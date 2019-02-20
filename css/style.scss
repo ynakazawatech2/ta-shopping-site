@@ -179,42 +179,49 @@ header {
     }
     .shopping-guide {
         weight: 100%;
-        .shoppingguide-color {
-            color: $keyColor;
-            font-weight: bold;
-        }
         p {
             font-weight: bold;
             margin: 0;
-            padding-top: 15px;
             color: $keyColor;
             text-align: left;
             padding-left: 10px;
+            padding-bottom: 5px;
+        }
+        .colorBlack {
+            color: black;
+            font-weight: normal;
         }
         .delivery {
             background-color: #ffffff;
             width: 100%;
             margin-bottom: 10px;
+            .delivery-about {
+                padding-top: 5px;
+            }
             .delivery-icon, .delivery-price, .delivery-how {
-                padding: 10px 0 10px 10px;
+                padding: 0;
                 text-align: left;
             }
             .delivery-icon {
                 display: block;
                 margin-left: 0px;
+                padding-left: 10px;
+                padding-bottom: 5px;
             }
         }
         .payment {
             background-color: #ffffff;
             width: 100%;
-            margin-bottom: 10px;
+            .payment-about {
+                padding-top: 5px;
+            }
             .payment-card, .payment-icon, .payment-price, .payment-how {
-                padding: 10px 0 10px 10px;
                 text-align: left;
             }
             .payment-icon {
                 display: block;
-                margin-left: 0px;
+                padding-left: 10px;
+                padding-bottom: 5px;
             }
         }
     }
@@ -696,10 +703,14 @@ header {
             background-image: url(../images/top/next_icon.png);
             background-repeat: no-repeat;
             background-position: center right 10px;
-            #pagelink-toggle-img, #category-toggle-img {
-                padding-top: 13px;
-                margin: 7px;
-                padding-left: 10px;
+            #pagelink-toggle-img {
+                margin-left: 15px;
+                padding-left: 0;
+                margin-top: 20px;
+            }
+            #category-toggle-img {
+                margin-left: 15px;
+                margin-top: 20px;
             }
             .active {
                 background-image: url(../images/top/down_icon.png);
@@ -712,9 +723,10 @@ header {
             }
             .pagelink-toggle, .category-toggle {
                 height: 40px;
-                #pagelink-toggle-img {
-                    margin-top: auto;
-                    padding-left: 5px;
+                #pagelink-toggle-img, #category-toggle-img {
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    padding-left: 0px;
                 }
             }
         }
@@ -775,13 +787,12 @@ header {
             height: 50px;
             margin: auto;
             #about-img {
-                padding-top: 12px;
-                margin: 7px;
-                padding-left: 11px;
+                margin-left: 15px;
+                margin-top: 20px;
+
                 // desktop
                 @media (min-width: 550px) {
-                    padding-top: 8px;
-                    padding-left: 8px;
+                    margin-top: 15px;
                 }
             }
             // desktop
@@ -846,9 +857,13 @@ header {
             height: 50px;
             margin: auto;
             #shopinfo-img {
-                padding-top: 12px;
-                margin: 7px;
-                padding-left: 11px;
+                margin-left: 15px;
+                margin-top: 20px;
+                
+                // desktop
+                @media (min-width: 550px) {
+                    margin-top: 15px;
+                }
             }
             @media (min-width: 550px) {
                 height: 40px;
